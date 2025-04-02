@@ -42,12 +42,11 @@ const userSchema = new mongoose.Schema({
     phone: {
         type: String,
         minlength: 10,
-        required: true
     },
     wishlist: {
-        type: [mongoose.Schema.Types.ObjectId],  
-        ref: 'Product', 
-        default: [], 
+        type: [mongoose.Schema.Types.ObjectId],
+        ref: 'Product',
+        default: [],
     },
     addresses: [{
         type: {
